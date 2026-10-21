@@ -1,0 +1,24 @@
+.word {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-block: 36px;
+}
+
+.word > .letter {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--bg-letter);
+
+  box-shadow: inset 0 -2px 2px -2px var(--text-h);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-h);
+}

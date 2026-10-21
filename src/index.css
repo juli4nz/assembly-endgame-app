@@ -1,14 +1,21 @@
 :root {
   --text: #8e8e8e;
   --text-h: #f9f4da;
+  --text-h-dark: #1e1e1e;
   --bg: #282726;
   --border: #d7d7d7;
   --accent: #fcba29;
   --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --bg-status-info: #7a5ea7;
+  --bg-status-error: #ba2a2a;
+  --bg-status-success: #10a95b;
+  --bg-letter: #323232;
+  --bg-wrong: #ec5d49;
+  --bg-valid: #10a95b;
 
   --sans: 'Hanken Grotesk', sans-serif;
 
-  font: 16px/145% var(--sans);
+  font: 400 16px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: dark;
   color: var(--text);
@@ -37,4 +44,15 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 73px 24px;
+}
+
+button {
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  outline: none;
+  margin: 0;
+  border: none;
+  color: inherit;
+  line-height: normal;
 }
