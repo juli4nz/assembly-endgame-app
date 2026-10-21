@@ -1,7 +1,5 @@
-import './App.css';
+import Header from './Header';
 
-function App() {
-  return <div>Assembly: Endgame</div>;
+export default function App() {
+  return <Header />;
 }
-
-export default App;
