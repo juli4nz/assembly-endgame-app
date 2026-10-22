@@ -1,6 +1,7 @@
 import './App.css';
 
 import BadgeList from './BadgeList';
+import Confetti from 'react-confetti';
 import Header from './Header';
 import Keyboard from './Keyboard';
 import Status from './Status';
@@ -58,6 +59,7 @@ export default function App() {
 
   return (
     <>
+      {isGameWon && <Confetti />}
       <Header />
       <section className="status-section">
         {statusWonElm || statusLostElm || statusFarewellElm}
