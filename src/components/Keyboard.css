@@ -23,12 +23,20 @@
   font-weight: 500;
   appearance: none;
   cursor: pointer;
+  position: relative;
 }
 
 .keyboard > button.letter.letter-wrong {
   background-color: var(--bg-wrong);
+  cursor: not-allowed;
 }
 
 .keyboard > button.letter.letter-valid {
   background-color: var(--bg-valid);
+  cursor: not-allowed;
+}
+
+.keyboard > button.letter:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
 }

@@ -7,14 +7,18 @@ type Props = PropsWithChildren & {
   onClick: (letter: string) => void;
   valid?: string[];
   wrong?: string[];
+  disabled?: boolean;
 };
 
-export default function Keyboard({ onClick, valid = [], wrong = [] }: Props) {
+export default function Keyboard({ onClick, valid = [], wrong = [], disabled = false }: Props) {
   const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
   const keyboardButtons = alphabet.map(letter => (
     <button
       key={letter}
+      disabled={disabled}
+      aria-disabled={disabled}
+      aria-label={`Letter ${letter}`}
       onClick={() => onClick(letter)}
       className={clsx(
         'letter',

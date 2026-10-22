@@ -1,8 +1,17 @@
-.badge-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-  max-width: 325px;
-  width: 100%;
+button.button {
+  background-color: var(--action);
+  padding: 10px 12px;
+  border: 1px solid var(--text-h);
+  border-radius: 4px;
+  color: var(--text-h-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  min-width: 204px;
+  margin-block: 36px;
+  cursor: pointer;
+}
+
+.status-section {
+  height: 60px;
+  margin-block: 30px;
 }

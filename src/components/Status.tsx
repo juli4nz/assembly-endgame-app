@@ -11,7 +11,7 @@ type Props = PropsWithChildren & {
 
 export default function Status({ variant = 'info', title, message }: Props) {
   return (
-    <div aria-live="polite" className={clsx('status', `status-${variant}`)}>
+    <div aria-live="polite" role="status" className={clsx('status', `status-${variant}`)}>
       {title && <h2>{title}</h2>}
       {message}
     </div>

@@ -22,3 +22,7 @@
   font-weight: 600;
   color: var(--text-h);
 }
+
+.word > .letter.letter-missing {
+  color: rgba(var(--text-h), 0.5);
+}
